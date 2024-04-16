@@ -5,9 +5,6 @@ Hier sind die gesammten Aufgaben für den Schnuppertag bei Raiffeisen. Die Proje
 - [Rai-Schnuppertag](https://github.com/franjofranjic/Rai-Schnuppertag)
 - [Rock-Paper-Scissors](https://github.com/jx4n16/Rock-Paper-Scissors)
 
-<br>
-<br>
+## Hilfe
 
-## Ablauf
-
-- [Ablauf](/Ablauf.md)
+- [Anleitung für die Basics](/anleitung.md)
