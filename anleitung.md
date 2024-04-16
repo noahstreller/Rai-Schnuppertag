@@ -1,15 +1,20 @@
-# Anleitung 
+# Anleitung
 
 ## Variables
 
-Ist ein "Packet", in das man etwas reinpacken kann. Mittels Name, kann man das Packet identifizieren.
-Zuerst kommt ein Keyword, dann der Name und nach dem Gleich der Inhalt. `var name = "inhalt"`
+Ist ein "Packet", in das man etwas reinpacken kann. Man kann das Packet mithilfe eines Namens identifizieren.
+Zuerst kommt ein Keyword, dann der Name und nach dem Gleich der Inhalt.
 
 ```js
-var variableNameString = "Ein Wort/Satz/Buchstaben hat Anführungs und Schluss zeichen, eine Zahl nicht; das ist ein sogenannter String"
-
-var variableNameZahl = 15
+var einSatz = "Ein Wort/Satz/Buchstaben hat Anführungs und Schluss zeichen, eine Zahl nicht; das ist ein sogenannter String";
+let eineZahl = 15;
 ```
+
+### var oder let?
+
+In JavaScript kann man Variablen auch mit `let` definieren. Der Unterschied liegt in der Kapselung. Wenn man `var` innerhalb einer Funktion benutzt, kann man überall in dieser Funktion darauf zugreifen; auch wenn sie in Schleifen definiert wird. Bei `let` ist dies etwas strenger, und die Variable kann nur innerhalb des Blocks verwendet werden, wo sie gesetzt wird.
+
+Ein wichtiges Prinzip in der Programmierung, ist, dass die Variablen nur dort verfügbar sind, wo sie tatsächlich gebraucht werden. Dies verhindert Konflikte in Situationen, wo beispielsweise zwei Iteratoren mit `i` definiert werden, und schont den RAM vor unnötigem Inhalt.
 
 ## Functions
 
@@ -27,7 +32,7 @@ function funcName(parameter1, parameter2, ...){
 
 ## If
 
-Mit einem If, kann man was überprüfen. Wenn mehrere Bedingungen erfüllt sein müssen, kann man das mit mit `&&` zwischen den Bedingungen definieren. Wenn eine andere Bedingung erfüllt sein muss, kann man das mit einem `else if (<bedingung>)` definieren, und der Rest kommt in `else {}`
+Mit `if` kann man ermitteln, ob eine Bedingung erfüllt ist. Wenn mehrere Bedingungen erfüllt sein müssen, kann man das mit mit `&&` zwischen den Bedingungen definieren. Wenn eine andere Bedingung erfüllt sein muss, kann man das mit einem `else if (<bedingung>)` definieren, und der Rest kommt in `else {}`
 
 ```js
 var zahl = 5
@@ -42,7 +47,7 @@ if (zahl >= 10){
 
 ## Switch
 
-Der Switch eingent sich etwas auf viele fixe Werte zu untersuchen. Mit einem Break geht man aus dem Switch, und im Default kommt alles rein, das nicht einen passenden Case-Wert hat.
+Der Switch eignet sich, die Bedingung auf viele fixe Werte zu untersuchen. Mit einem Break "bricht" man aus dem Switch heraus, und sollte die Bedingung keine der definierten Situationen entsprechen, wird jeweils der "default"-case ausgeführt. Switches sollten allerdings vermieden werden, da es gegen viele Prinzipien von Clean Code verstösst.
 
 ```js
 var name = "Max"
@@ -64,32 +69,33 @@ switch(name){
 
 ## For
 
-Mit der For-Loop itariert man mehrmals durch eine Schleife. Im Beispiel wird von 0 - 11 gezählt. `i` (der Zähler) wird auf 0 gesetz, mit `i <= 10` setzt man den wert, bis wohin gezählt werden soll und mit `i++` wird nach jedem duchlauf der Zähler um eins erhöht.
+Mit der For-Loop iteriert man mehrmals durch eine Schleife. Im Beispiel wird von 0 - 11 gezählt. `i` (der Zähler / Iterator) wird auf 0 gesetzt, mit `i <= 10` setzt man den Wert, bis wohin gezählt werden soll. Mit `i++` wird nach jedem Duchlauf der Zähler um eins erhöht.
 
 ```js
-for(var i = 0; i <= 10; i++){
-    console.log(i)
+for(let i = 0; i <= 10; i++){
+    console.log(i);
 }
 ```
 
 ## While
 
-Die While-Loop wird soviel mal ausgeführt, bis die Bedingung false ist, also solange sie zutrifft. Hier wird eine variable `i` (zähler) definiert und auf 0 gesetzt. Danach wird geprüft, ob i kleiner als 10 ist, wenn ja soll die schleife ausgefürt werden, dann wird die aktuelle Zahl ausgegeben und der Zähler wird um eins erhöht. Falls der Zähler schon vor der Schleife mind. 10 ist, wird diese nicht mehr ausgeführt.
+Die While-Loop wird soviel mal ausgeführt, solange die Bedingung zutrifft. Hier wird eine Variable `i` (Zähler / Iterator) definiert und auf 0 gesetzt. Danach wird geprüft, ob `i` kleiner als 10 ist. Wenn dies zutrifft, wird die aktuelle Zahl ausgegeben und der Zähler wird um eins erhöht. Falls der Zähler schon vor der Schleife 10 oder grösser ist, wird die gesamte Schleife nicht ignoriert.
 
 ```js
 var i = 0
 while (i < 10) {
-  console.log(i)
-  i++
+  console.log(i);
+  i++;
 }
 ```
 
 ## Do-While
-Die While-Loop wird soviel mal ausgeführt, bis die Bedingung false ist, also solange sie zutrifft. Hier wird eine variable `i` (zähler) definiert und auf 0 gesetzt. Danach wird die Schleife einmal ausgefürt, und danach geprüft ob sie true ist, wenn sie true ist, wird sie nochmals ausgeführt, wenn nicht geht sie weiter. Hier wird auch hochgezählt, bis der Zähler 10 (oder grösser) ist. Der unterschied zur normalen While-Loop ist, dass diese auch wenn der Zähler schon vorher mind. 10 ist, einmal durchgeführt wird, da sie erst nach dem durchlauf überprüft wird.
+
+Die Do-While-Schleife ist sehr ähnlich zur While-Schleife, allerdings wird sie mindestens einmal ausgeführt. Die Bedingung wirkt erst beim zweiten Durchlauf.
 
 ```js
 do {
-  consoe.log(i)
+  console.log(i)
   i++;
 }
 while (i < 10)

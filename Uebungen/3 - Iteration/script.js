@@ -13,7 +13,7 @@ console.log('Start');
 /*
  *   Aufgabe 3: For-Schliefe
  *   -----------------------------------
- *   Erstelle eine For-Schleife, welche das folgende Ausgibt
+ *   Erstelle eine For-Schleife, welche das Folgende ausgibt:
  *
  *   3
  *   9
@@ -26,6 +26,8 @@ console.log('Start');
 /*   Aufgabe 4: Durchschnittsberechnung
  *   -----------------------------------
  *   Man erhält ein Array aus Zahlen und soll den Durchschnitt berechnen
+ * 
+ *   Formel: Durchschnitt = Summe aller Zahlen / Anzahl Zahlen
  *
  *   Vorgehen:
  *       1. For-Schleife erstellen
