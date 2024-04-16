@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="calculator-header">
+                <h1 class="calculator-header-text">Taschenrechner</h1>
+            </div>
+            <div class="calculator-body">
+                <div class="calculator-body-input">
+                    <input type="text" id="input" value="0" readonly>
+                </div>
+                <div class="calculator-body-buttons">
+                    <div class="row">
+                        <button class="button buttonSmall bgColorLightGray" id="button-clear">C</button>
+                        <button class="button buttonSmall bgColorLightGray" id="button-backspace">&larr;</button>
+                        <button class="button buttonSmall bgColorLightGray" id="button-percent">&#37;</button>
+                        <button class="button buttonSmall bgColorOrange" id="button-divide">&divide;</button>
+                    </div>
+                    <div class="row">
+                        <button class="button buttonSmall bgColorDarkGray" id="button-7">7</button>
+                        <button class="button buttonSmall bgColorDarkGray" id="button-8">8</button>
+                        <button class="button buttonSmall bgColorDarkGray" id="button-9">9</button>
+                        <button class="button buttonSmall bgColorOrange" id="button-multiply">&times;</button>
+                    </div>
+                    <div class="row">
+                        <button class="button buttonSmall bgColorDarkGray" id="button-4">4</button>
+                        <button class="button buttonSmall bgColorDarkGray" id="button-5">5</button>
+                        <button class="button buttonSmall bgColorDarkGray" id="button-6">6</button>
+                        <button class="button buttonSmall bgColorOrange" id="button-minus">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="button buttonSmall bgColorDarkGray" id="button-1">1</button>
+                        <button class="button buttonSmall bgColorDarkGray" id="button-2">2</button>
+                        <button class="button buttonSmall bgColorDarkGray" id="button-3">3</button>
+                        <button class="button buttonSmall bgColorOrange" id="button-plus">+</button>
+                    </div>
+                    <div class="row">
+                        <button class="button buttonBig bgColorDarkGray" id="button-0">0</button>
+                        <button class="button buttonSmall bgColorDarkGray" id="button-dot">.</button>
+                        <button class="button buttonSmall bgColorOrange" id="button-equal">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
