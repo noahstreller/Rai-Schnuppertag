@@ -8,7 +8,7 @@ console.log('Start');
  *   3. Gib eine Warunung aus
  *   4. Gib einen Fehler aus
  */
-console.log('Name: Franjo Franjic' + ' Alter: ' + 18 + ' Geburtstag: ' + new Date('2002-09-27'));
+console.log('Name: Max Muster' + ' Alter: ' + 18 + ' Geburtstag: ' + new Date('2002-09-27'));
 console.info('Das ist eine Information');
 console.warn('Das ist eine Warnung!');
 console.error('Das hier ist ein Fehler!');
@@ -19,8 +19,8 @@ console.debug('Das hier ist ein Debug!');
  *   Deklariere Variabeln für deinen Vornamen, Nachnamen, Geburtstag und Alter und gib diese aus
  */
 var alter = 18;
-var vorname = 'Franjo'
-var nachname = 'Franjic';
+var vorname = 'Max'
+var nachname = 'Muster';
 var geburtstag = new Date('2002-09-27');
 
 /*   Aufgabe 3: Variabeln 2.0

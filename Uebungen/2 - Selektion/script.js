@@ -5,7 +5,7 @@ console.log('Start');
  *   Wenn Zahl grösser als 0 gebe aus: die Zahl ist postiv
  *   Falls Zahl Kleiner als 0 ist gebe aus: die Zahl ist negativ
  */
-function isPositiv(zahl) {
+function isPositive(zahl) {
     if (zahl >= 0) {
         console.log('die Zahl ist positiv');
     } else {
@@ -32,7 +32,7 @@ function isBetween(zahl) {
  *   Bei Noten über oder gleich 4: genügende Note
  */
 
-function noteAnzeige(note) {
+function notenAnzeige(note) {
     if (note < 4) {
         console.log('ungenügende Note');
     } else if (note >= 4) {
@@ -73,31 +73,7 @@ function whatDrink(alter) {
  *
  *   if bmi > 30 return "Obese"
  */
-function calculaterBMI(weight, height) {
+function calculateBMI(weight, height) {
     var bmi = weight / height * height;
     if (bmi <= 18.5) { return 'Underweight'; } else if (bmi <= 25) { return 'Normal'; } else if (bmi <= 30) { return 'Overweight'; } else if (bmi > 30) { return 'Obese'; }
-}
-
-/*   Aufgabe 6: Switch-Case (Freiwillig wenn genügend Zeit)
- *   -----------------------------------
- *   Erstelle eine Klasse Person
- */
-
-class person {
-    name;
-    geschlecht;
-}
-
-function WerDarfMit(person) {
-    switch (person.geschlecht) {
-        case Weiblich:
-            console.log("Weiblich");
-            break;
-        case Männlich:
-            console.log("Männlich");
-            break;
-        default:
-            console.log("Ein Tier oder so");
-            break;
-    }
 }
