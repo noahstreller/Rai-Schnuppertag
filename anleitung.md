@@ -6,7 +6,7 @@ Ist ein "Packet", in das man etwas reinpacken kann. Man kann das Packet mithilfe
 Zuerst kommt ein Keyword, dann der Name und nach dem Gleich der Inhalt.
 
 ```js
-var einSatz = "Ein Wort/Satz/Buchstaben hat Anführungs und Schluss zeichen, eine Zahl nicht; das ist ein sogenannter String";
+var einSatz = "Text hat Anführungs- und Schlusszeichen, eine Zahl nicht; das ist ein sogenannter String";
 let eineZahl = 15;
 ```
 
