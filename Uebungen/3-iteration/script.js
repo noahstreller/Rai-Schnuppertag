@@ -1,4 +1,4 @@
-console.log('Start');
+console.log("Start - 3 - Iteration");
 
 /*   Aufgabe 1:  While-Schleife
  *   -----------------------------------

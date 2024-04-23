@@ -1,4 +1,4 @@
-console.log("Start");
+console.log("Start - 1 - Variablen");
 
 /*
  *   Aufgabe 1: Ausgabe

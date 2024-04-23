@@ -37,4 +37,6 @@ Folge diesen Schritten, um die Entwicklungsumgebung aufzusetzen. Du kannst entwe
 5. Verwende die Tastenkombination `CTRL + SHIFT + P`
 6. Gib in diesem Fenster ein: `Five start` und dann die Enter-Taste
 
+**Es ist wichtig, dass der Server im `index.html`-File gestartet wird.**
+
 Danach kannst du die Aufgaben lösen. Die Seite aktualisiert sich automatisch, wenn du eine Änderung vornimmst.

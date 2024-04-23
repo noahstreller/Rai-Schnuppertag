@@ -1,13 +1,27 @@
 # Anleitung
 
-## Variables
+## Ausgabe in der Konsole
+
+Um die Resultate der Aufgaben zu sehen, geben wir die Lösungen als Text in der Konsole aus.
+
+```js
+console.log("Dies ist eine normale Ausgabe.")
+console.info("Dies ist eine Ausgabe, die für den Benutzer bestimmt sind.")
+console.debug("Diese Ausgabe wird normalerweise automatisch vom Browser versteckt.")
+console.warn("Diese Ausgabe ist eine Warnung.")
+console.error("Diese Ausgabe wird als Error dargestellt.")
+```
+
+## Variablen
 
 Ist ein "Packet", in das man etwas reinpacken kann. Man kann das Packet mithilfe eines Namens identifizieren.
 Zuerst kommt ein Keyword, dann der Name und nach dem Gleich der Inhalt.
 
 ```js
-var einSatz = "Text hat Anführungs- und Schlusszeichen, eine Zahl nicht; das ist ein sogenannter String";
-let eineZahl = 15;
+var einSatz = "Text hat Anführungs- und Schlusszeichen, eine Zahl nicht; das ist ein sogenannter String"; // dies ist ein String
+let eineZahl = 15; // dies ist eine Zahl
+var istWahr = true; // dies ist ein Boolean
+let listeMitAutos = ["Mercedes", "BMW", "VW", "Audi"] // dies ist ein Array
 ```
 
 ### var oder let?
@@ -16,9 +30,9 @@ In JavaScript kann man Variablen auch mit `let` definieren. Der Unterschied lieg
 
 Ein wichtiges Prinzip in der Programmierung, ist, dass die Variablen nur dort verfügbar sind, wo sie tatsächlich gebraucht werden. Dies verhindert Konflikte in Situationen, wo beispielsweise zwei Iteratoren mit `i` definiert werden, und schont den RAM vor unnötigem Inhalt.
 
-## Functions
+## Funktionen
 
-In einer Function kann man regelmässige Aufgaben zusammentragen.
+In einer Funktion kann man regelmässige Aufgaben zusammentragen.
 Ein Parameter ist eine Variable die dort definiert wird, um etwas der Function mitzuteilen, damit z.B. die Zahlen sich ändern können.
 
 ```js
@@ -30,15 +44,20 @@ function funcName(parameter1, parameter2, ...){
 }
 ```
 
-## If
+Eine Funktion hat oftmals eine Eingabe, diese wird verarbeitet, und resultiert in einer Ausgabe (EVA-Prinzip).
+
+Beispielsweise die Funktion `kochen(zutaten)` nimmt die Zutaten als Eingabe, verarbeitet diese zu einer Mahlzeit, und gibt das fertige Gericht als Ausgabe.
+
+## If-Bedingung
 
 Mit `if` kann man ermitteln, ob eine Bedingung erfüllt ist. Wenn mehrere Bedingungen erfüllt sein müssen, kann man das mit mit `&&` zwischen den Bedingungen definieren. Wenn eine andere Bedingung erfüllt sein muss, kann man das mit einem `else if (<bedingung>)` definieren, und der Rest kommt in `else {}`
 
 ```js
 var zahl = 5
+
 if (zahl >= 10){
     console.log("Zahl ist grösser oder gleich als 10")
-} else if(zahl < 10 && zahl >= 5) {
+} else if (zahl < 10 && zahl >= 5) {
     console.log("Zahl ist zwischen 5 und 9")
 } else {
     console.log("Zahl ist kleiner als 5")
@@ -62,14 +81,14 @@ switch(name){
         console.log("Der Name ist John")
         break
     default:
-        console.log("Der Name existiert nicht in der liste")
+        console.log("Der Name existiert nicht in der Liste")
         break
 }
 ```
 
 ## For
 
-Mit der For-Loop iteriert man mehrmals durch eine Schleife. Im Beispiel wird von 0 - 11 gezählt. `i` (der Zähler / Iterator) wird auf 0 gesetzt, mit `i <= 10` setzt man den Wert, bis wohin gezählt werden soll. Mit `i++` wird nach jedem Duchlauf der Zähler um eins erhöht.
+Mit der For-Loop iteriert man mehrmals durch eine Schleife. Im Beispiel wird von 0 - 11 gezählt. `i` (der Zähler / Iterator) wird auf 0 gesetzt, mit `i <= 10` setzt man den Wert, bis wohin gezählt werden soll. Mit `i++` wird nach jedem Durchlauf der Zähler um eins erhöht.
 
 ```js
 for(let i = 0; i <= 10; i++){

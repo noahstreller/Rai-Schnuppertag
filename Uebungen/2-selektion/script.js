@@ -1,4 +1,4 @@
-console.log('Start');
+console.log("Start - 2 - Selektion");
 
 /*   Aufgabe 1: Selektion 1.0
  *   -----------------------------------
