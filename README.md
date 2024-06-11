@@ -12,8 +12,9 @@ Hier sind die Aufgaben für den Schnuppertag bei Raiffeisen. Die Projekte wurden
 
 ## Los gehts
 
-Folge diesen Schritten, um die Entwicklungsumgebung aufzusetzen. Du kannst entweder lokal auf dem Laptop arbeiten oder die Aufgaben in einer Web-basierten Umgebung lösen.
+Folge diesen Schritten, um die Entwicklungsumgebung aufzusetzen. <!--- Du kannst entweder lokal auf dem Laptop arbeiten oder die Aufgaben in einer Web-basierten Umgebung lösen. -->
 
+<!--- 
 ### Lokal
 
 1. Lade dir [VSCode](https://code.visualstudio.com) herunter: `winget install Microsoft.VisualStudioCode` **(Nicht verwechseln mit Visual Studio! Das Icon soll blau sein, nicht violett)**
@@ -27,6 +28,7 @@ Folge diesen Schritten, um die Entwicklungsumgebung aufzusetzen. Du kannst entwe
 5. Öffne die Datei `index.html` in VSCode
 6. Verwende die Tastenkombination `CTRL + SHIFT + P`
 7. Gib in diesem Fenster ein: `Five start` und dann die Enter-Taste
+-->
 
 ### Stackblitz
 
