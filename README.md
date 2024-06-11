@@ -19,7 +19,7 @@ Folge diesen Schritten, um die Entwicklungsumgebung aufzusetzen. <!--- Du kannst
 1. Lade dir [VSCode](https://code.visualstudio.com) herunter: `winget install Microsoft.VisualStudioCode` **(Nicht verwechseln mit Visual Studio! Das Icon soll blau sein, nicht violett)**
 2. Lade dir das Projekt herunter:
    1. [https://t.ly/DXP1N](https://t.ly/DXP1N) oder [https://github.com/noahstreller/Rai-Schnuppertag](https://github.com/noahstreller/Rai-Schnuppertag)
-   2. Auf den grünen Button mit dem Label "**<> Code**" klicken, und "ZIP herunterladen" auswählen
+   2. Auf den grünen Button mit dem Label "**<> Code**" klicken, und "ZIP herunterladen" auswählen (oder [hier](https://github.com/noahstreller/Rai-Schnuppertag/archive/refs/heads/aufgaben.zip) klicken)
    3. Extrahiere den Ordner
    4. Öffne den Ordner in VSCode
 3. Klicke auf der linken Navigationsleiste auf das Icon mit den 4 Quadraten
